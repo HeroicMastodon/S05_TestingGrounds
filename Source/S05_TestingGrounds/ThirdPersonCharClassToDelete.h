@@ -16,7 +16,6 @@ class S05_TESTINGGROUNDS_API AThirdPersonCharClassToDelete : public ATP_ThirdPer
 	
 public:
 
-	// TODO Remove/ make getter
 	UPROPERTY(EditInstanceOnly, Category = "Patrol Route")
 	TArray<AActor*> PatrolPointsCPP;
 
