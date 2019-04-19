@@ -42,9 +42,11 @@ void AGun::Tick(float DeltaTime)
 
 void AGun::OnFire()
 {
+	UE_LOG(LogTemp, Warning, TEXT("Firing.."))
 	// try and fire a projectile
 	if (ProjectileClass != NULL)
 	{
+		
 		UWorld* const World = GetWorld();
 		if (World != NULL)
 		{
@@ -67,12 +69,14 @@ void AGun::OnFire()
 	// try and play the sound if specified
 	if (FireSound != NULL)
 	{
+		
 		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
 	}
 
 	// try and play a firing animation if specified
 	if (FireAnimation != NULL)
 	{
+		
 		// Get the animation object for the arms mesh
 		if (AnimInstance != NULL)
 		{
