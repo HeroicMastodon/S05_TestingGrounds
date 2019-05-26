@@ -102,7 +102,7 @@ void AFirstPersonCharacter::BeginPlay()
 		Mesh1P->SetHiddenInGame(false, true);
 	}
 	// Bind fire event
-	InputComponent->BindAction("Fire", IE_Pressed, Gun, &AGun::OnFire);
+	//InputComponent->BindAction("Fire", IE_Pressed, Gun, &AGun::OnFire);
 }
 
 //////////////////////////////////////////////////////////////////////////
